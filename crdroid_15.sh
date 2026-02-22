@@ -26,7 +26,7 @@ git clone https://github.com/Sorayukii/proprietary_vendor_sony_tama-common -b 15
 git clone https://github.com/Sorayukii/priv-keys -b master vendor/lineage-priv
 
 # Export
-export BUILD_USERNAME=ivy
+export BUILD_USERNAME=makeroot911
 export BUILD_HOSTNAME=crave
 
 # Set up build environment
