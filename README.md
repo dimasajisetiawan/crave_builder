@@ -15,4 +15,9 @@ crave run --no-patch -- "curl -LSs https://raw.githubusercontent.com/dimasajiset
 crave run --no-patch -- "curl -LSs https://raw.githubusercontent.com/dimasajisetiawan/crave_builder/refs/heads/main/lineage_15.sh | bash"
 
 ```
+<b> - Evolution 15 </b>
+```
+crave run --no-patch -- "curl -LSs https://raw.githubusercontent.com/dimasajisetiawan/crave_builder/refs/heads/main/evo_15.sh | bash"
+
+```
 
