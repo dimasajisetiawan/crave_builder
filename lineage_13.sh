@@ -14,7 +14,7 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
 # Sync the repositories
 /opt/crave/resync.sh
 /opt/crave/resync.sh
-repo sync
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all) --retry-fetches=25
 
 # Clone device tree
 git clone https://github.com/Sorayukii/stardust_kernel_sony_sdm845 -b stock kernel/sony/sdm845
@@ -33,6 +33,7 @@ export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 
 # Build rom
+croot
 brunch akatsuki
 
 # Upload rom
