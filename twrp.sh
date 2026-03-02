@@ -8,12 +8,12 @@ rm -rf hardware/sony
 rm -rf vendor/sony
 
 # Initialize repo
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo init -u https://github.com/SHRP/manifest.git -b shrp-12.1
 
 # Sync the repositories
 /opt/crave/resync.sh
 /opt/crave/resync.sh
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 # Clone device tree
 git clone https://github.com/Sorayukii/stardust_kernel_sony_sdm845 -b stock kernel/sony/sdm845
