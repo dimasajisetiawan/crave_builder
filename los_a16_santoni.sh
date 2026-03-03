@@ -26,7 +26,7 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
-lunch lineage_Mi8937-userdebug 
+lunch lineage_Mi8937_4_19-bp4a-userdebug 
 
 # Build rom
 brunch Mi8937
