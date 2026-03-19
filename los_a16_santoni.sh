@@ -26,10 +26,9 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
-lunch lineage_Mi8937-userdebug 
-
+breakfast Mi8937 userdebug;
+mka bacon
 # Build rom
-brunch Mi8937
 
 # Upload rom
 curl uploader.sh -T out/target/product/Mi8937/lineage*.zip
