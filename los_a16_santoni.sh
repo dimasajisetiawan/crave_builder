@@ -1,13 +1,5 @@
 #!/bin/bash
 
-# WARNING: This will remove all local changes!
-rm -rf .repo/local_manifests
-rm -rf kernel/sony
-rm -rf device/sony
-rm -rf hardware/sony
-rm -rf vendor/sony
-rm -rf vendor/lineage-priv
-
 # Initialize repo
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
 
