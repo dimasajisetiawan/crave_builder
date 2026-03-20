@@ -18,7 +18,7 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
-breakfast Mi8937 userdebug;
+breakfast Mi8937 userdebug
 mka bacon
 # Build rom
 
