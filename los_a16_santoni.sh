@@ -3,13 +3,15 @@
 # Initialize repo
 repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs
 
+git clone https://github.com/dimasajisetiawan/local_manifests .repo/local_manifests
+
 # Sync the repositories
 /opt/crave/resync.sh
 /opt/crave/resync.sh
 repo sync
 
 # Clone device tree
-git clone https://github.com/dimasajisetiawan/local_manifests .repo/local_manifests
+
 
 
 # Export
@@ -18,8 +20,7 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
-breakfast Mi8937 userdebug
-mka bacon
+brunch Mi8937
 # Build rom
 
 # Upload rom
