@@ -20,7 +20,8 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
-brunch Mi8937
+lunch lineage_Mi8937-userdebug
+mka bacon
 # Build rom
 
 # Upload rom
