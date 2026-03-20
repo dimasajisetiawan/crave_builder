@@ -20,7 +20,7 @@ export BUILD_HOSTNAME=crave
 
 # Set up build environment
 source build/envsetup.sh
-lunch lineage_Mi8937-userdebug
+breakfast akatsuki userdebug;
 mka bacon
 # Build rom
 
