@@ -11,7 +11,7 @@ git clone https://github.com/dimasajisetiawan/local_manifests .repo/local_manife
 repo sync
 
 # Clone device tree
-
+git submodule update --remote --recursive
 
 
 # Export
