@@ -20,7 +20,7 @@ git clone https://github.com/sorayuki01/priv-keys -b master vendor/lineage-priv
 # Sync the repositories
 /opt/crave/resync.sh
 /opt/crave/resync.sh
-repo sync
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 # Export
 export BUILD_USERNAME=makeroot911
